@@ -1,0 +1,12 @@
+﻿import React, { Component } from 'react';
+
+class ListaProductos extends Component {
+
+
+
+    render() {
+
+    }
+}
+
+export default ListaProductos;
