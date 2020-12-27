@@ -16,6 +16,17 @@ export const changeLoadingMessage = value => ({
     value
 });
 
+// MESSAGE_DIALOG
+
+export const showMessageDialog = value => ({
+    type: actionType.SHOW_MESSAGE_DIALOG,
+    value
+});
+
+export const hideMessageDialog = () => ({
+    type: actionType.HIDE_MESSAGE_DIALOG
+});
+
 // DRAWER
 
 export const openDrawer = () => ({
@@ -28,4 +39,10 @@ export const closeDrawer = () => ({
 
 export const toggleDrawer = () => ({
     type: actionType.TOGGLE_DRAWER
+});
+
+// PRODUCTOS
+export const productosLoaded = value => ({
+    type: actionType.PRODUCTOS_LOADED,
+    value
 });

@@ -6,6 +6,9 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import { Link } from "react-router-dom";
+
+
 import { openDrawer, closeDrawer } from "../../actions"
 
 import "./CustomAppBar.css";
@@ -32,9 +35,9 @@ class CustomAppBar extends Component {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h5" noWrap>
-                        Meneses Gallardo
-                            </Typography>
+                    <Link to="/">
+                        <Typography variant="h5" className="title" noWrap>Meneses Gallardo</Typography>
+                    </Link>
                 </Toolbar>
             </AppBar>
         );

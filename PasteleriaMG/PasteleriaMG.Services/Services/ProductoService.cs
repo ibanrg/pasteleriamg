@@ -26,5 +26,10 @@ namespace PasteleriaMG.Services.Services
         {
             return await _productoRepository.GetAll();
         }
+
+        public async Task<bool> Remove(Producto producto)
+        {
+            return await _productoRepository.Remove(producto);
+        }
     }
 }

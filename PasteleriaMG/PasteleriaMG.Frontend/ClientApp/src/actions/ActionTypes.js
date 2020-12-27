@@ -8,6 +8,13 @@ export const HIDE_LOADING = "HIDE_LOADING";
 //Accion para cambiar mensaje del loading principal
 export const CHANGE_LOADING_MESSAGE = "CHANGE_LOADING_MESSAGE";
 
+// MESSAGE_DIALOG
+
+//Accion para mostrar un mensaje en un dialog
+export const SHOW_MESSAGE_DIALOG = "SHOW_MESSAGE_DIALOG";
+//Accion para ocultar el dialog
+export const HIDE_MESSAGE_DIALOG = "HIDE_MESSAGE_DIALOG";
+
 // DRAWER
 
 // Accion para abrir el drawer
@@ -16,3 +23,8 @@ export const OPEN_DRAWER = "OPEN_DRAWER";
 export const CLOSE_DRAWER = "CLOSE_DRAWER";
 // Accion para cambiar el drawer
 export const TOGGLE_DRAWER = "TOGGLE_DRAWER";
+
+// PRODUCTOS
+
+// Accion para carga de productos
+export const PRODUCTOS_LOADED = "PRODUCTOS_LOADED";

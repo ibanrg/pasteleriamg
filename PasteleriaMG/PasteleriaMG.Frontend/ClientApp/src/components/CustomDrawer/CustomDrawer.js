@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import { Drawer, List, ListSubheader, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import ListIcon from '@material-ui/icons/List';
 import { closeDrawer } from "../../actions"
 
-import {
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from '../../images/logo.png';
 
@@ -34,30 +27,30 @@ class CustomDrawer extends Component {
                     onKeyDown={() => this.props.closeDrawer()}
                 >
                     <div className="drawer-logo">
-                        <img src={logo} />
+                        <Link to="/"><img src={logo} /></Link>
                     </div>
                     <List>
                         <ListSubheader>Pedidos</ListSubheader>
-                        <Link to="lista-pedidos">
+                        <Link to="/pedidos">
                             <ListItem button key="lista-pedidos">
                                 <ListItemIcon><ListIcon /></ListItemIcon>
                                 <ListItemText primary="Lista pedidos" />
                             </ListItem>
                         </Link>
-                        <Link to="nuevo-pedido">
+                        <Link to="/pedidos/nuevo">
                             <ListItem button key="nuevo-pedido">
                                 <ListItemIcon><AddIcon /></ListItemIcon>
                                 <ListItemText primary="Nuevo pedido" />
                             </ListItem>
                         </Link>
                         <ListSubheader>Productos</ListSubheader>
-                        <Link to="lista-productos">
+                        <Link to="/productos">
                             <ListItem button key="lista-productos">
                                 <ListItemIcon><ListIcon /></ListItemIcon>
                                 <ListItemText primary="Lista productos" />
                             </ListItem>
                         </Link>
-                        <Link to="nuevo-producto">
+                        <Link to="/productos/nuevo">
                             <ListItem button key="nuevo-producto">
                                 <ListItemIcon><AddIcon /></ListItemIcon>
                                 <ListItemText primary="Nuevo producto" />

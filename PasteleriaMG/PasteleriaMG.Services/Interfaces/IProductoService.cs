@@ -10,5 +10,6 @@ namespace PasteleriaMG.Services.Interfaces
     {
         Task<List<Producto>> GetAll();
         Task<bool> Add(Producto producto);
+        Task<bool> Remove(Producto producto);
     }
 }

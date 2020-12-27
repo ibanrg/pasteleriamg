@@ -1,11 +1,10 @@
-.menu-list {
+.drawer .menu-list {
     min-width: 250px !important;
 }
-.drawer-logo{
+.drawer .drawer-logo {
     margin-top: 10px;
     text-align: center;
 }
-a {
-    text-decoration: none !important;
+.drawer a {
     color: rgba(0, 0, 0, 0.54) !important;
 }

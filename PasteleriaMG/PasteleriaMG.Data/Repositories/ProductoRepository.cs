@@ -23,12 +23,26 @@ namespace PasteleriaMG.Data.Repositories
             try
             {
                 await _db.AddAsync(producto);
+                await _db.SaveChangesAsync();
                 return true;
             }
             catch (Exception ex)
             {
-                throw ex;
-                //return false;
+                return false;
+            }
+        }
+
+        public async Task<bool> Remove(Producto producto)
+        {
+            try
+            {
+                _db.Remove(producto);
+                await _db.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 

@@ -1,0 +1,28 @@
+.loader-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999999;
+    display: flex;
+    /* width: 100vw;
+  height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.spinner-container {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    /* border-radius: 8px; */
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    min-width: 250px;
+    border-radius: 2px;
+}

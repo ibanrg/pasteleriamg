@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
@@ -36,7 +38,7 @@
     <Folder Include="ClientApp\public\images\" />
     <Folder Include="ClientApp\src\contexts\" />
     <Folder Include="ClientApp\src\images\" />
-    <Folder Include="ClientApp\src\NewFolder\" />
+    <Folder Include="NewFolder\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

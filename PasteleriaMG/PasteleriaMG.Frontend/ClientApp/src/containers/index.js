@@ -1,13 +1,9 @@
 ﻿import Home from "./Home/Home";
-import FormProducto from "./Productos/FormProducto";
-import ListaProductos from "./Productos/ListaProductos";
-import FormPedido from "./Pedidos/FormPedido";
-import ListaPedidos from "./Pedidos/ListaPedidos";
+import Productos from "./Productos/Productos";
+import Pedidos from "./Pedidos/Pedidos";
 
 export {
     Home,
-    FormProducto,
-    ListaProductos,
-    FormPedido,
-    ListaPedidos
+    Productos,
+    Pedidos
 };

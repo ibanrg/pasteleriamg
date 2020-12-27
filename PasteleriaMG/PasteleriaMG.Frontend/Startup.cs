@@ -13,6 +13,7 @@ using PasteleriaMG.Data.Contexts;
 using PasteleriaMG.Data.Extensions;
 using System;
 using System.Text;
+using AutoMapper;
 
 namespace PasteleriaMG.Frontend
 {
@@ -35,7 +36,7 @@ namespace PasteleriaMG.Frontend
             services.AddDbContext<PasteleriaMgDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("dbPasteleriaMg")));
 
             services.AddControllersWithViews();
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddDataServices();
             services.AddServices();
 
